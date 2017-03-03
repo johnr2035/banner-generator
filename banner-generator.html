@@ -12,13 +12,23 @@
            $('h3').html("You just graduated Software Engineering. This course was very hard for most of the kids and I want to recognize your hardwork and dedication to this class." +  username);
            $('h4').html("In honor of your hardwork I would liketo give you this award that shows others in your family and your friends your accomplishments in this class." + username);
            $('h5').html("I hope you continue with software engineering and have a great future in life." + username)
-           $
+           $('h1, h3, h4, h5').hover(
+             function(){
+               $('h1, h3, h4, h5').css('width', '500px');
+             },
+             function(){
+               $('h1, h3, h4, h5').css('width', '400px');
+             }
+             
+          );
   
           });
         });
     </script>
     <style>
-    
+    h1, h3, h4, h5{
+      background-color: yellow;
+    }
     </style>
     </head>
   <body>
